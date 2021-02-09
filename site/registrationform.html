@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+body {
+  font-family: 'Nunito', sans-serif;
+  color: #242582;
+}
+
+form {
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: #f64c72;
+  
+}
+
+h1 {
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea,
+select {
+  font-size: 16px;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+ 
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+}
+
+select {
+  padding: 6px;
+  height: 32px;
+  border-radius: 2px;
+}
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: #4bc970;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+ 
+  width: 50%;
+ }
+
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+
+legend {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+label.light {
+  font-weight: 300;
+  display: inline;
+}
+
+ form {
+    max-width: 480px;
+  }
+
+
+</style>
+<title>Course Registration Form</title>
+</head>
+<body>
+
+  <form >
+  
+    <h1>Course Registration Form</h1>
+    
+    <fieldset>
+      <label >Student's Name:</label>
+      <input type="text">
+      <br>
+      <label >Student Email:</label>
+      <input type="email">
+      <br>
+      <label >Password:</label>
+      <input type="password">
+      <br>
+      <br>
+      <label>Gender:</label>
+      <input type="radio" ><label class="light">Male</label><br>
+      <input type="radio" ><label  class="light">Female</label>
+      
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>Course Details</legend>
+      <br>
+      <label >Courses Available:</label>
+    <select >
+       <option>Data Structures</option>
+       <option>VLSI</option>
+       <option>Cloud Computing</option>
+       <option>Thermodynamics</option>
+       <option>Green Tech</option>
+    </select>
+    <br>
+      <label >Enter the courses to be elected:</label>
+      <textarea  rows="10" col="30">example: Data Structures,VLSI</textarea>
+    </fieldset>
+    <br>
+    <fieldset>
+    <label >Branch:</label>
+    <select >
+       <option>CSE</option>
+       <option>ECE</option>
+       <option>EEE</option>
+       <option>ME</option>
+       <option>CE</option>
+    </select>
+
+    
+        <label>Backlog left:</label>
+        <input type="checkbox" ><label class="light" >Yes</label><br>
+        <input type="checkbox" ><label class="light" >No</label><br>
+        
+    
+    </fieldset>
+    <br>
+    <button type="submit">Register</button>
+  </form>
+  
+</body>
+</html>
+</html>
