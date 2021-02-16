@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <style>
+        body {
+            margin : 0;
+        }
+        .header {
+            background-color: firebrick;
+            padding : 20px;
+            text-align: center;
+        }
+        .navbar {
+            overflow: hidden;
+            background-color:khaki;
+        }
+        .navbar a {
+                float: left;
+                display: block;
+                color:rgb(42, 53, 32);
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            .navbar a:hover {
+            background-color:lawngreen;
+            }
+            .column {
+            float: left;
+            padding: 10px;
+            }
+            .column.side {
+            width: 25%;
+            border-width: 20px;
+            border:black;
+            border-style:double;
+            background-color: coral;
+            }
+            .column.middle {
+                width: 71%;
+                border-width: 20px;
+            border:black;
+            border-style:double;
+            background-color: chartreuse;
+            }
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            @media screen and (max-width: 600px) {
+            .column.side, .column.middle {
+            width: 100%;
+            }
+
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>Tathagat's Blog</h1>
+</div>    
+<div class="navbar">
+    <a href="abc.com">Blog</a>
+    <a href="abc.com">Projects</a>
+    <a href="abc.com">About ME!</a>
+</div>
+<div class="row">
+    <div class="column middle">
+      <h2>MAIN CONTENT</h2>
+      <p>Hello Everyone! and welcome to my blog. This place takes 71% of the width.....................................................................................................................................................................................................................................................</p>
+      
+    </div>
+    <div class="column side">
+      <h2>ADS COLUMN</h2>
+      <p>This is where ADS will be displayed, This place takes 25% of the width</p>
+    </div>
+    
+   
+  </div>
+</body>
+</html>
